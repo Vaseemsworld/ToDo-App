@@ -1,0 +1,14 @@
+.myrow {
+    margin: 10px;
+    text-align: left;
+    color: rgb(0, 255, 255);
+    font-size: 20px;
+}
+
+.btn {
+    width: 60px;
+}
+
+input {
+    height: 40px;
+}

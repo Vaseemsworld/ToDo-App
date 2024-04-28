@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(12, 109, 138);
+    color: white;
+}
+
+.welcome {
+    font-size: 25px;
+    margin-top: 40px;
+    color: aqua;
+}
