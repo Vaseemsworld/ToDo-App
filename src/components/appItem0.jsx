@@ -5,14 +5,14 @@ function Appitem0({ itemNameRef, itemDateRef, onAddButton }) {
 
     return <div className="container">
         <form className={`row ${styles.myrow}`} onSubmit={onAddButton}>
-            <div className="col-6">
-                <input style={{ width: '35vw' }}
+            <div className={`col-6 ${styles.input}`}>
+                <input
                     type="text"
                     ref={itemNameRef}
                     placeholder="Enter todo here..."
                 />
             </div>
-            <div className="col-4">
+            <div className={`col-4 ${styles.input}`}>
                 <input
                     type="date"
                     ref={itemDateRef}

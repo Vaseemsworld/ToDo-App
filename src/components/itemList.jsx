@@ -7,14 +7,13 @@ function ItemList() {
     const itemNameRef = useRef();
     const itemDateRef = useRef();
 
-    const { newitems, addNewItem } = useContext(ItemStore);
-
+    const { newItems, addNewItem } = useContext(ItemStore);
     const handleAddButtonClick = (event) => {
         event.preventDefault();
         const itemName = itemNameRef.current.value;
         const itemDate = itemDateRef.current.value;
         if (itemName.trim() !== '' && itemDate.length === 10) {
-            const itemExists = newitems.filter((item) => item.itemName === itemName).length > 0;
+            const itemExists = newItems.filter((item) => item.itemName === itemName).length > 0;
             if (!itemExists) {
                 addNewItem(itemName.toLowerCase(), itemDate);
             } else {
@@ -35,7 +34,7 @@ function ItemList() {
                 onAddButton={handleAddButtonClick}
             />
 
-            {newitems.map((item) => (
+            {newItems.map((item) => (
                 <Appitem
                     key={item.itemName}
                     itemName={item.itemName}

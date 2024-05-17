@@ -6,9 +6,10 @@
 }
 
 .btn {
-    width: 60px;
+    width: 100%;
 }
 
 input {
     height: 40px;
+    width: 100%;
 }
