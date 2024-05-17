@@ -22,7 +22,3 @@ Make sure you have Node.js and npm installed on your machine. You can download t
 
 ```bash
 git clone https://github.com/Vaseemsworld/ToDo-App.git
-
-cd ToDo App
-
-npm run dev
